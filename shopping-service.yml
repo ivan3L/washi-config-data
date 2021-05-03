@@ -42,7 +42,7 @@ logging:
 eureka:
   client:
     serviceUrl:
-      defaultZone: https://washiapi20210419224935.azurewebsites.net/api/
+      defaultZone: http://localhost:8099/eureka/
 # Feign and Hystrix
 Feign:
   hystrix:
