@@ -25,3 +25,7 @@ spring:
           uri: lb://geographics-service
           predicates:
             - Path=/geographics/**
+        - id: security-service
+          uri: lb://security-service
+          predicates:
+            - Path=/security/**
