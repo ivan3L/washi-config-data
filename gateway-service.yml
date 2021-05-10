@@ -1,5 +1,5 @@
 server:
-  port: 8080
+  port: 6969
 
 eureka:
   client:
@@ -13,14 +13,6 @@ spring:
         locator:
           enabled: true
       routes:
-        - id: customer-service
-          uri: lb://customer-service
-          predicates:
-            - Path=/customers/**
-        - id: product-service
-          uri: lb://product-service
-          predicates:
-            - Path=/products/**
         - id: geographics-service
           uri: lb://geographics-service
           predicates:
