@@ -25,3 +25,7 @@ spring:
           uri: lb://subnpay-service
           predicates:
             - Path=/subnpay/**
+        - id: business-service
+            uri: lb://business-service
+            predicates:
+              - Path=/business/**
